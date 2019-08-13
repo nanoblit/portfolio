@@ -5,13 +5,13 @@ import twitchCloneImage from "./images/projects/Twitch-Clone.png";
 const projectData = [
   {
     title: "How-To",
-    image: fotographImage,
+    image: howToImage,
     description: "A React app for submitting guides.",
     tags: ["React", "React Router", "Redux", "Styled-Components"]
   },
   {
     title: "Fotograph",
-    image: howToImage,
+    image: fotographImage,
     description: "A website for a portfolio app.",
     tags: ["HTML5", "Less", "GSAP", "ES6+"]
   },
