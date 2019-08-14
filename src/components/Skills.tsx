@@ -42,7 +42,7 @@ const Skills = (): JSX.Element => {
       <p>React, Styled-Components, React Router, Redux</p>
       <br />
       <br />
-      <p>Node, Express</p>
+      <p>Node, Express, Knex, SQL, Jest</p>
     </SkillsDiv>
   );
 };
