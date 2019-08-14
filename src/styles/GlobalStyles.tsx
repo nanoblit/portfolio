@@ -31,6 +31,7 @@ const GlobalStyles = createGlobalStyle`
   p, a {
     font-size: 2rem;
     line-height: 1.3;
+    cursor: pointer;
   }
 
   span {

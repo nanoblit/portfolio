@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Reveal from "react-reveal/Reveal";
+import * as Scroll from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobeEurope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -106,6 +107,7 @@ const CardImg = styled.div`
 const Projects = (): JSX.Element => {
   return (
     <ProjectsDiv>
+      <Scroll.Element name="Projects" />
       <h2>Projects</h2>
       <div className="cards">
         {projectData.map(

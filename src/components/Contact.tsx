@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Reveal from "react-reveal/Reveal";
+import * as Scroll from "react-scroll";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -29,6 +30,7 @@ const ContactDiv = styled.div`
 const Contact = (): JSX.Element => {
   return (
     <ContactDiv>
+      <Scroll.Element name="Contact" />
       <h2>Contact</h2>
       <Reveal effect="fadeInUp" cascade>
         <div className="contact-links">

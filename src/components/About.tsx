@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Reveal from "react-reveal/Reveal";
+import * as Scroll from "react-scroll";
 
 const AboutDiv = styled.div`
   max-width: 104.2rem;
@@ -42,8 +43,9 @@ const AboutDiv = styled.div`
 
 const About = (): JSX.Element => {
   return (
-    <AboutDiv>
-      <Reveal effect="fadeInUp">
+    <Reveal effect="fadeInUp">
+      <Scroll.Element name="About" />
+      <AboutDiv>
         <h2>About</h2>
         <p>
           Since childhood I&apos;ve been interested in computers, programming
@@ -67,8 +69,8 @@ const About = (): JSX.Element => {
           about problem solving and helped me improve my work ethic. Now
           I&apos;m excited to learn more about new skills, tech and frameworks.
         </p>
-      </Reveal>
-    </AboutDiv>
+      </AboutDiv>
+    </Reveal>
   );
 };
 

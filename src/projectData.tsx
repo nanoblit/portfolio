@@ -1,6 +1,7 @@
 import fotographImage from "./images/projects/Fotograph.png";
 import howToImage from "./images/projects/How-To.png";
 import twitchCloneImage from "./images/projects/Twitch-Clone.png";
+import dadJokesImage from "./images/projects/Dad-Jokes.jpg";
 
 const projectData = [
   {
@@ -18,6 +19,14 @@ const projectData = [
     tags: ["HTML5", "Less", "GSAP", "ES6+"],
     websiteLink: "https://fotograph-jm.netlify.com/",
     codeLink: "https://github.com/art-portfolio-bw/art-portfolio-UI-Jakub"
+  },
+  {
+    title: "Dad Jokes backend",
+    image: dadJokesImage,
+    description: "A backend for a website with jokes.",
+    tags: ["Express", "Knex", "SQLite"],
+    websiteLink: "https://dad-jokes-be.herokuapp.com/",
+    codeLink: "https://github.com/nanoblit/dad-jokes-be"
   },
   {
     title: "Twitch Clone",
