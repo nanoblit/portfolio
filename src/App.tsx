@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 
 import Bar from "./components/Bar";
@@ -12,6 +12,9 @@ import GlobalStyles from "./styles/GlobalStyles";
 const AppDiv = styled.div``;
 
 const App = (): JSX.Element => {
+  useEffect((): void => {
+    document.title = "Jakub Maleta";
+  }, []);
   return (
     <AppDiv>
       <GlobalStyles />
