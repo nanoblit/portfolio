@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Slide from "react-reveal/Slide";
 import { mainColor } from "../styles/variables";
 
 import background from "../images/background.jpg";
@@ -71,14 +72,18 @@ const MainImage = (): JSX.Element => {
     <MainImageDiv>
       <div className="summary-and-me">
         <div className="summary">
-          <p>
-            I am a full-stack web developer interested in modern web
-            technologies who also enjoys gaming and gamedev.
-          </p>
+          <Slide left>
+            <p>
+              I am a full-stack web developer interested in modern web
+              technologies who also enjoys gaming and gamedev.
+            </p>
+          </Slide>
         </div>
-        <div className="me">
-          <img alt="My face" src={me} />
-        </div>
+        <Slide right>
+          <div className="me">
+            <img alt="My face" src={me} />
+          </div>
+        </Slide>
       </div>
     </MainImageDiv>
   );

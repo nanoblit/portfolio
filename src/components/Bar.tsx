@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { iconZoom } from "../styles/variables";
 
 const BarDiv = styled.div`
   background-image: linear-gradient(
@@ -34,6 +35,11 @@ const BarDiv = styled.div`
     a {
       margin-right: 4rem;
       text-decoration: none;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(${iconZoom});
+      }
 
       &:last-of-type {
         margin-right: 0;
